@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "lib-flexible": "^0.3.2",
+    "postcss-px2rem": "^0.3.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
@@ -32,7 +37,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": 0
+    }
   },
   "browserslist": [
     "> 1%",
