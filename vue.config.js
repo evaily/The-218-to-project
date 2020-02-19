@@ -6,16 +6,6 @@ const postcss = px2rem({
 module.exports = {
     runtimeCompiler: true,
     productionSourceMap: false,
-    configureWebpack: {// 当前配置需要写入该选项中
-        resolve: {
-          extensions: ['.js', '.vue', '.json'],
-          alias: {
-            'vue$': 'vue/dist/vue.esm.js', 
-            '@': resolve('src'), // 设置文件查找路径，可简写文件查找路径
-            'components': resolve('src/components'),
-          }
-        }
-      },
       lintOnSave: false,
       css: { // 添加postcss配置
         loaderOptions: {
