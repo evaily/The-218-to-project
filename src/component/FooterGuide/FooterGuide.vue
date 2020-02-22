@@ -34,6 +34,7 @@
   bottom 0
   width 100%
   height 98px
+  background #fff
   ul
     display flex
     height 100%
